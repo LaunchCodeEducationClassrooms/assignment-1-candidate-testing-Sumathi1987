@@ -12,7 +12,7 @@ let questions =["Who was the first American woman in space? " ,"True or false: 5
 let correctAnswers = ["Sally Ride", "true", "40", "Trajectory", "3"];
 let candidateAnswers= [];
 let grade;
-let totalCorrectAnswer =0;
+let totalCorrectAnswer = 0;
 let result;
 
 function askForName() {
