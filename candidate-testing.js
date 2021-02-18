@@ -26,12 +26,10 @@ for (let i = 0; i < questions.length; i++) {
 candidateAnswers[i] = input.question(questions[i]);
 console.log(`your answer : ${candidateAnswers[i]}`);
 console.log(`Correct Answer : ${correctAnswers[i]}`);
-
 if (candidateAnswers[i] == correctAnswers[i].toLowerCase()) {
      candidateAnswers[i].toLowerCase();
      numberOfCorrectAnswer++;
-     //console.log("total correct answers =", numberOfCorrectAnswer);
-     //console.log("------------------------------------");
+     
 }
 }
 }
@@ -41,7 +39,6 @@ function gradeQuiz(candidateAnswers) {
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
 
  grade = numberOfCorrectAnswer / (questions.length) * 100
- //console.log("---------------GRADE---------------------");
  console.log(`>>> Overall Grade: ${grade} (${numberOfCorrectAnswer} of ${questions.length} responses correct) <<<`);
 
   if (grade >= 80 ) {
@@ -49,7 +46,6 @@ function gradeQuiz(candidateAnswers) {
   } else {
     result = "FAILED";
   } 
-  //console.log("-----------------STATUS-------------------");
 console.log(`>>> Status: ${result} <<<`);
  return grade;
   }
