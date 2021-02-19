@@ -34,20 +34,20 @@ for(let i=0;i<questions.length;i++) {
   if(candidateAnswers[i].toLowerCase() === correctAnswers[i].toLowerCase()){
      totalCorrectAnswer++;   
 }
-   console.log(`${questions[i]}`);
-   console.log(`Your answer : ${candidateAnswers[i]}`);
-   console.log(`Correct Answer : ${correctAnswers[i]}`);
+   console.log(`${questions[i]}
+   Your answer : ${candidateAnswers[i]}
+   Correct Answer : ${correctAnswers[i]}\n`)
 }
 
- let grade=totalCorrectAnswer/(questions.length)*100 ;
+console.log(`Candidate Name: ${candidateName}\n`)
 
-console.log(`>>> Overall Grade: ${grade} % (${totalCorrectAnswer} of ${questions.length} responses correct) <<<`); 
-
+ let grade=((totalCorrectAnswer/questions.length)*100) ;
   if (grade >= 80) {
     console.log(">>> Status: PASSED <<<");
   } else {
     console.log(">>> Status: FAILED <<<");
   }
+  console.log(`>>> Overall Grade: ${grade} % (${totalCorrectAnswer} of ${questions.length} responses correct) <<<`); 
  return grade;
 }
  /*if(grade >= 80){
