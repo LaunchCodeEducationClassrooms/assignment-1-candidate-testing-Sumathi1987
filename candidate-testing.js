@@ -21,7 +21,7 @@ candidateName=input.question("Enter your name: ");
 
 function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
-for(i=0;i<5;i++) {
+for(i=0;i<questions.length;i++) {
 candidateAnswers[i]=input.question(questions[i]);
 }
 }
@@ -34,9 +34,9 @@ for(let i = 0; i < questions.length; i++){
   if(candidateAnswers[i].toLowerCase() === correctAnswers[i].toLowerCase()){
      totalCorrectAnswer++;   
 }
-   console.log(`${i + 1} ${questions[i]}
-   Your Answer : ${candidateAnswers[i]}
-   Correct Answer : ${correctAnswers[i]}\n`)
+   console.log(`${questions[i]}`);
+   console.log(`your answer : ${candidateAnswers[i]}`);
+   console.log(`correct answer : ${correctAnswers[i]}`);
 }
 
 console.log(`Candidate Name: ${candidateName}\n`);
